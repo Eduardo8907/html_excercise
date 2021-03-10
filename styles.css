@@ -1,0 +1,101 @@
+/*Complete this CSS file (it is already linked to the HTML page). 
+Try to create an appealing design, keeping these principles and tips in mind:
+	1.Create a clear visual hierarchy (including styling your menu to clearly indicate what page is active).
+	2.Make sure the content doesn't feel cramped or too long (use margin, padding, width)
+	3.Try adding appeal to your design with good typographic choices (try using Google fonts)
+	4.Use em (rather than px) whenever possible
+	5.Adjust your design based on the screen size (try to create a responsive menu by using @media-queries)
+You may add some Javascript, but you don't have to.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+
+body{
+    font-family: Stick;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+#wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+nav{
+    align-items: center;
+    background-color: blue;
+    margin-top: 2em;
+}
+
+ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 1em;
+    
+}
+
+nav a {
+   float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; 
+}
+
+a{
+    
+    color: azure;
+    text-decoration: none;
+     
+}
+
+/* change link color on hover */
+li a:hover {
+    background-color: yellow;
+    color: black;
+    text-decoration: underline;
+}
+
+nav a.active {
+  background-color: yellow;
+  color: black;
+}
+
+header{
+   margin-top: 2em;
+    text-align: center;
+    background-color: yellow;
+    border: solid;
+}
+
+#content{
+    background-color:white;
+    color: black;
+    text-align: left;
+    margin: 2em;
+    padding: 1em;
+    font-size: 1em;
+}
+
+footer{
+    background-color: darkslategrey;
+    color: azure;
+    padding: 0.5em;
+/*    margin: 1em;*/
+    text-align: center;
+    font-size: 10px;
+}
+
+/* for mobile phones */
+*a {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width){
+    
+}
